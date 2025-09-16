@@ -1,0 +1,10 @@
+{
+  "input": "C:\\Users\\sagni\\Downloads\\MRI Scan\\archive\\Testing",
+  "num_images": 1311,
+  "class_counts": {
+    "glioma": 563,
+    "meningioma": 222,
+    "pituitary": 170,
+    "notumor": 356
+  }
+}

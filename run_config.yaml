@@ -1,0 +1,32 @@
+run:
+  timestamp: '2025-09-16T11:49:03.387418'
+  seed: 42
+  device: /CPU:0
+data:
+  train_dir: C:\Users\sagni\Downloads\MRI Scan\archive\Training
+  test_dir: C:\Users\sagni\Downloads\MRI Scan\archive\Testing
+  classes:
+  - glioma
+  - meningioma
+  - notumor
+  - pituitary
+  val_split: 0.1
+model:
+  architecture: EfficientNetB0
+  transfer_learning: true
+  frozen_base: true
+  optimizer: Adam
+  learning_rate: 0.001
+  epochs: 20
+  image_size:
+  - 256
+  - 256
+  num_classes: 4
+artifacts:
+  model_h5: C:\Users\sagni\Downloads\MRI Scan\model.h5
+  class_indices_pkl: C:\Users\sagni\Downloads\MRI Scan\class_indices.pkl
+  metrics_json: C:\Users\sagni\Downloads\MRI Scan\metrics.json
+  classification_report_csv: C:\Users\sagni\Downloads\MRI Scan\classification_report.csv
+  confusion_matrix_csv: C:\Users\sagni\Downloads\MRI Scan\confusion_matrix.csv
+  accuracy_loss_png: C:\Users\sagni\Downloads\MRI Scan\accuracy_loss.png
+  confusion_matrix_png: C:\Users\sagni\Downloads\MRI Scan\confusion_matrix.png
